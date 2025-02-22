@@ -114,9 +114,9 @@ public class UpdaterPatcher : BasePatcher
 		{
 			var versionPath = ModPath + "/version.json";
 			var localJson = JsonNode.Parse(File.ReadAllText(versionPath)).AsObject;
-			var responseMod = Client.GetStringAsync("https://api.github.com/repos/SmallYuanSY/LocalizeLimbusCompany_TW/releases/latest").GetAwaiter()
+			var responseMod = Client.GetStringAsync("https://api.github.com/repos/SmallYuanSY/LocalizeLimbusCompany/releases/latest").GetAwaiter()
 				.GetResult(); //LLCMod
-			var responseRelease = Client.GetStringAsync("https://api.github.com/repos/LocalizeLimbusCompany/LLC_Release/releases/latest").GetAwaiter()
+			var responseRelease = Client.GetStringAsync("https://api.github.com/repos/SmallYuanSY/LLC_Release/releases/latest").GetAwaiter()
 				.GetResult(); //LLCRelease
 			var serverModJson = JsonNode.Parse(responseMod).AsObject;
 			var serverReleaseJson = JsonNode.Parse(responseRelease).AsObject;
@@ -131,7 +131,7 @@ public class UpdaterPatcher : BasePatcher
 				LogInfo("New mod version found. Download full mod.");
 				var updatelog = $"LimbusLocalize_BIE_v{tag}.7z";
 				var downloadUri = UpdateUri == NodeType.GitHub
-					? $"https://github.com/SmallYuanSY/LocalizeLimbusCompany_TW/releases/download/v{tag}/{updatelog}"
+					? $"https://github.com/SmallYuanSY/LocalizeLimbusCompany/releases/download/v{tag}/{updatelog}"
 					: string.Format(UrlDictionary[UpdateUri], updatelog);
 				var filename = Path.Combine(GamePath, updatelog);
 				if (!File.Exists(filename)) DownloadFile(downloadUri, filename);
