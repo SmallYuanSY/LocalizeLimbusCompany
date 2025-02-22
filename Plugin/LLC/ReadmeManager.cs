@@ -156,13 +156,13 @@ public static class ReadmeManager
 		try
 		{
 			var lastUpdateTimeText =
-				Client.GetStringAsync("https://api.zeroasso.top/v2/readme/get_latest_time").GetAwaiter().GetResult();
+				Client.GetStringAsync("https://smallyuansy.github.io/LocalizeLimbusCompany_TW/LatestUpdateTime.txt").GetAwaiter().GetResult();
 			var filePath = LLCMod.ModPath + "/Localize/Readme/Readme.json";
 			var lastWriteTime = new FileInfo(filePath).LastWriteTime;
 			if (lastWriteTime >= DateTime.Parse(lastUpdateTimeText))
 				return;
 			File.WriteAllText(filePath,
-				Client.GetStringAsync("https://api.zeroasso.top/v2/readme/get_readme").GetAwaiter().GetResult());
+				Client.GetStringAsync("https://smallyuansy.github.io/LocalizeLimbusCompany/Readme.json").GetAwaiter().GetResult());
 			InitReadmeList();
 		}
 		catch (Exception ex)

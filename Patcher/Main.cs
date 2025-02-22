@@ -125,7 +125,7 @@ public class UpdaterPatcher : BasePatcher
 			LogInfo($"Server Mod Version: {tag}");
 			var appOldVersion = localJson["version"].Value;
 			var latestTextVersion = int.Parse(serverReleaseJson["name"].Value);
-			var localTextVersion = int.Parse(localJson["resource_version"].Value);
+			var localTextVersion = int.Parse(localJson["name"].Value);
 			if (Version.Parse(appOldVersion) < Version.Parse(tag))
 			{
 				LogInfo("New mod version found. Download full mod.");

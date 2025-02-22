@@ -11,8 +11,8 @@ jobs:
       - name: Check Ver
         id: extract_version
         run: |
-          $response = Invoke-WebRequest -Uri https://api.github.com/repos/SmallYuanSY/LocalizeLimbusCompany_TW/releases/latest -Method Get
-          curl -o CHANGELOG.md https://raw.githubusercontent.com/SmallYuanSY/LocalizeLimbusCompany_TW/main/CHANGELOG.md
+          $response = Invoke-WebRequest -Uri https://api.github.com/repos/SmallYuanSY/LocalizeLimbusCompany/releases/latest -Method Get
+          curl -o CHANGELOG.md https://raw.githubusercontent.com/SmallYuanSY/LocalizeLimbusCompany/main/CHANGELOG.md
           $version = Get-Content -Path CHANGELOG.md | Select-Object -First 1 | ForEach-Object { $_ -replace '# ', '' }
           $content = $response.Content | ConvertFrom-Json
           if (!($content.tag_name -eq $version)) {
