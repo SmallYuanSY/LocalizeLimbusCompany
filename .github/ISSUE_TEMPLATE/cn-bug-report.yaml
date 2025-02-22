@@ -1,0 +1,56 @@
+name: Bug 反饋（使用中文）
+description: 閃退,無法進入遊戲,缺字,亂碼等
+labels: ['錯誤']
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 在提問之前...
+      description: 您在此發佈新 Issue 會導致全體開發人員的電子郵件收到一封提醒，請通過確認下列條目以節省所有人的時間。
+      options:
+      - label: 我反饋的問題在零協會 BiliBili 動態沒有相應近期公告
+        required: true
+      - label: 我反饋的問題不屬於已關閉/已解決的其他 Issue
+        required: true
+      - label: 我使用的模組版本為最新版
+        required: true
+      - label: 我理解 Issue 是用於反饋和解決問題的，而非吐槽評論區，將盡可能提供更多信息幫助問題解決
+        required: true
+      - label: 我填寫了簡短且清晰明確的標題，以便開發者在翻閱 issue 列表時能快速確定大致問題。而不是“一個建議”、“卡住了”等
+        required: true
+  - type: textarea
+    id: describe
+    attributes:
+      label: 問題描述
+      description: 盡可能詳細描述你的問題，包括但不限於問題發生的背景、問題的具體表現、問題的頻率、問題的影響等
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: 日誌文件
+      description: |
+        **模組問題 上傳 遊戲目錄下的 `遊戲日誌.log`日誌文件，並說明問題出現的大致位置**
+        **框架問題 上傳 遊戲目錄下的 `框架日誌.log`日誌文件，並說明問題出現的大致位置**
+        **如果沒有 上傳 遊戲目錄文件夾中的 `Latest.log`日誌文件，並說明問題出現的大致位置**
+        **請直接將完整的文件拖拽進來，而非自己裁切的片段；若文件體積過大可壓縮後再上傳**
+        **這些日誌文件每次關閉遊戲都會刷新，請確保正確且有效**
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截圖
+      description: |
+        如果有，請添加螢幕截圖以幫助解釋你的問題，包括但不限於遊戲畫面截圖
+    validations:
+      required: false
+  - type: textarea
+    id: others
+    attributes:
+      label: 還有其他信息嗎？
+      description: |
+        電腦系統，配置，連結，參考資料等等，
+        任何能讓我們對你所遇到的問題有更多了解的東西
+    validations:
+      required: false

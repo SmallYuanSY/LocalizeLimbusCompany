@@ -1,0 +1,3 @@
+[submodule "LLC_Release"]
+	path = Localize
+	url = https://github.com/SmallYuanSY/LLC_Release

@@ -1,0 +1,33 @@
+name: 需求建議（使用中文）
+description: 新功能、建議等
+labels: ['建議']
+body:
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: 在提問之前...
+      description: 您在此處發布新 Issue 會導致全體開發者的電子郵箱收到一封提醒郵件，請通過確認以下條目以節省所有人的時間。
+      options:
+      - label: 我基本確定這是一個新功能/建議，而不是遇到了 bug。bug請在“錯誤”類別中反饋
+        required: true
+      - label: 我填寫了簡短且清晰明確的標題，以便開發者在翻閱 issue 列表時能快速理解我所提出的建議
+        required: true
+  - type: textarea
+    id: describe
+    attributes:
+      label: 說說你遇到的問題？
+    validations:
+      required: false
+  - type: textarea
+    id: solution
+    attributes:
+      label: 有什麽好的想法？
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: 其他內容
+      description: 關於該需求建議的任何其他背景或屏幕截圖。
+    validations:
+      required: false

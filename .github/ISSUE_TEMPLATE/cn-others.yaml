@@ -1,0 +1,11 @@
+name: 其他議題（使用中文）
+description: 提出問題，而不是 bug 反饋或需求建議
+labels: ['問題']
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: 說說你遇到的問題？
+      description: 您在此處發布新 Issue 會導致全體開發者的電子郵箱收到一封提醒郵件，請確認您的反饋是有意義的，以節省所有人的時間。
+    validations:
+      required: false
