@@ -15,7 +15,6 @@ jobs:
         with:
            repository: 'SmallYuanSY/LLC_Release'
            path: Localize
-           token: ${{ secrets.ROOT }}
       - name: Cache NuGet packages
         uses: actions/cache@v4
         with:
