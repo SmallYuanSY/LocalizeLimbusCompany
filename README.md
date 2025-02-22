@@ -1,3 +1,8 @@
+<div align="center">
+<a href="https://github.com/LocalizeLimbusCompany/LocalizeLimbusCompany">
+   <img src="https://avatars.githubusercontent.com/u/129521269" />
+</a>
+
 # LocalizeLimbusCompany
 邊獄公司 LimbusCompany 本地化模組
 
