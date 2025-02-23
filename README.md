@@ -32,7 +32,7 @@
    
    - 在Steam主界面右鍵遊戲點擊管理 瀏覽本地文件夾 將壓縮包內所有東西**不 要 新 建 文 件 夾**的解壓到上述彈出的文件夾中
 ### 2. 安裝字體文件
-   - 從[中文通用字體![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=更新日期)](https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset)下載字體文件 後解壓到上述文件夾中
+   - 從[中文通用字體![](https://img.shields.io/github/release/LocalizeLimbusCompany/LLC_ChineseFontAsset.svg?label=更新日期)](../../../LLC_ChineseFontAsset)下載字體文件 後解壓到上述文件夾中
 ### 3. 安裝漢化
    - 從[最新版](../../releases)下載全量包 後解壓到上述文件夾中
     
