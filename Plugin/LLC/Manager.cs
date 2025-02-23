@@ -34,7 +34,7 @@ public class Manager(IntPtr ptr) : MonoBehaviour(ptr)
 	}
 
 	public static void OpenGlobalPopup(string description, string title = null, string close = "取消",
-		string confirm = "确认", Action confirmEvent = null, Action closeEvent = null)
+		string confirm = "確認", Action confirmEvent = null, Action closeEvent = null)
 	{
 		if (!GlobalGameManager.Instance) return;
 		var globalPopupUI = GlobalGameManager.Instance.globalPopupUI;

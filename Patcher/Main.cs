@@ -177,7 +177,7 @@ public class UpdaterPatcher : BasePatcher
 		try
 		{
 			var releaseUri = UpdateUri == NodeType.GitHub
-				? "https://api.github.com/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest"
+				? "https://api.github.com/repos/SmallYuanSY/LLC_ChineseFontAsset/releases/latest"
 				: "https://api.zeroasso.top/v2/get_api/get/repos/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/latest";
 			var response = Client.GetStringAsync(releaseUri).GetAwaiter().GetResult();
 			var latest = JsonNode.Parse(response).AsObject;
@@ -195,7 +195,7 @@ public class UpdaterPatcher : BasePatcher
 				{
 					updatelog = $"tmpchinesefont_BIE_{latestReleaseTag}.7z";
 					downloadUri =
-						$"https://github.com/LocalizeLimbusCompany/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}";
+						$"https://github.com/SmallYuanSY/LLC_ChineseFontAsset/releases/download/{latestReleaseTag}/{updatelog}";
 				}
 				else
 				{

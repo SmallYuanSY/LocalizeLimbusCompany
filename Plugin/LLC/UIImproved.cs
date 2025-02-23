@@ -53,9 +53,6 @@ public static class UIImproved
 			case FormationPersonalityUI_LabelTypes.Changed:
 				__instance.tmp_text.text = "<size=45>已更改";
 				break;
-			case FormationPersonalityUI_LabelTypes.Participated:
-				__instance.img_label.sprite = ReadmeManager.ReadmeSprites["LLC_Selected"];
-				break;
 		}
 	}
 }

@@ -23,7 +23,7 @@ public class LLCMod : BasePlugin
 
 	public const string Guid = $"Com.{Author}.{Name}";
 	public const string Name = "LocalizeLimbusCompany";
-	public const string Version = "0.7.2";
+	public const string Version = "0.7.3";
 	public const string Author = "Bright";
 	public const string LLCLink = "https://github.com/SmallYuanSY/LocalizeLimbusCompany";
 	public static ConfigFile LLCSettings;
